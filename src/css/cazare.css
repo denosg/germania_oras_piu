@@ -1,9 +1,8 @@
 header {
-    background-color: #EBE3D5;
+    background-color: grey;
     padding: 10px;
     display: flex;
     align-items: center;
-    width: 100%;
 }
 
 .hamburger-menu {
@@ -103,7 +102,6 @@ footer {
     padding: 22px;
     text-align: center;
     font-size: 16px;
-    background-color: #EBE3D5;
 }
 
 /* Media query for tablets */
