@@ -1,0 +1,218 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffdfc;
+    min-height: 100vh;
+}
+
+header {
+    background-color: grey;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.imgSTEAG {
+    vertical-align: middle;
+    margin-left: 124px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 124px;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(21, 21, 21);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+main {
+    margin-left: 124px;
+    margin-right: 124px;
+    flex: 1;
+    font-size: 16px;
+    text-align: justify;
+}
+
+footer {
+    margin-top: auto;
+    padding: 22px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    /* sau dimensiunea dorită */
+}
+
+.imagine {
+    width: 50%;
+    /* ajustează dimensiunea imaginii după nevoie */
+    float: left;
+    /* poziționează imaginea în stânga */
+    margin-right: 20px;
+}
+
+.text-dreapta {
+    width: 50%;
+    /* ajustează dimensiunea spațiului textului */
+    float: right;
+    /* poziționează textul în dreapta */
+    margin-left: 10px;
+    /* adaugă un spațiu între imagine și text */
+    text-align: justify;
+}
+
+h1 {
+    text-align: justify;
+}
+
+.hamburger-menu {
+    display: none;
+    /* Inițial ascuns pe ecrane mari */
+}
+
+.mobile-menu {
+    display: none;
+    /* Inițial ascuns */
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    .imagine {
+        width: 100%;
+        /* ajustează dimensiunea imaginii după nevoie */
+        float: left;
+        /* poziționează imaginea în stânga */
+        height: 10%;
+        padding-bottom: 10px;
+    }
+
+    .text-dreapta {
+        width: 50%;
+        /* ajustează dimensiunea spațiului textului */
+        text-align: justify;
+
+    }
+
+    .hamburger-menu {
+        margin-right: 10px;
+        margin-left: auto;
+        display: block;
+        /* Show the hamburger menu */
+        cursor: pointer;
+    }
+
+    .line {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px 0;
+
+    }
+
+    .imgSTEAG {
+        margin-left: 10px;
+        width: 35px;
+        height: 20px;
+    }
+
+    nav.desktop-menu ul {
+        display: none;
+        /* Hide the desktop menu */
+    }
+
+    main {
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    footer {
+        margin-top: auto;
+        padding: 10px;
+        font-size: 12px;
+        width: 100%;
+        height: 40px;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    header {
+        min-width: 100%;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    main {
+        margin-left: 6%;
+        margin-right: 6%;
+        font-size: 14px;
+    }
+
+    .imagine {
+        width: 98%;
+        height: 25%;
+    }
+
+    .imgSTEAG {
+        margin-left: 20px;
+    }
+
+    nav.desktop-menu ul {
+        margin-right: 20px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    header {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+}
