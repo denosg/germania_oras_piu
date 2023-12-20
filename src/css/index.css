@@ -1,0 +1,314 @@
+/* General styles for desktop */
+.Paragraphs {
+    display: flex;
+}
+
+.Paragraphs p {
+    margin: 0 10px;
+    /* Adjust spacing between paragraphs */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffdfc;
+    min-height: 100vh;
+}
+
+.hamburger-menu {
+    display: none;
+    /* Inițial ascuns pe ecrane mari */
+}
+
+.mobile-menu {
+    display: none;
+    /* Inițial ascuns */
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin-left: 124px;
+    margin-right: 124px;
+    text-align: justify;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.imgSTEAG {
+    vertical-align: middle;
+    margin-left: 124px;
+}
+
+nav.desktop-menu {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.desktop-menu ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 124px;
+    display: flex;
+}
+
+.desktop-menu li {
+    margin-right: 30px;
+}
+
+.desktop-menu a {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: rgb(21, 21, 21);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+footer {
+    margin-top: auto;
+    padding: 22px;
+    text-align: center;
+    font-size: 16px;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #181717;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@media screen and (min-width: 1201px) {
+    .Paragraf1 {
+        width: 36%;
+        float: right;
+        margin-top: 6%;
+    }
+
+    .Paragraf2 {
+        width: 36%;
+        float: right;
+    }
+
+    .Paragraf3 {
+        width: 36%;
+        float: right;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 1200px) {
+    .imgSTEAG {
+        margin-left: 20px;
+    }
+
+    nav.desktop-menu ul {
+        margin-right: 20px;
+    }
+
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .slideshow-container {
+        display: none;
+    }
+
+    .dot {
+        display: none;
+    }
+
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+
+    .slideshow-container {
+        display: none;
+    }
+
+    .dot {
+        display: none;
+    }
+
+    .hamburger-menu {
+        margin-right: 10px;
+        margin-left: auto;
+        display: block;
+        /* Show the hamburger menu */
+        cursor: pointer;
+    }
+
+    .line {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px 0;
+
+    }
+
+    .imgSTEAG {
+        margin-left: 10px;
+        width: 35px;
+        height: 20px;
+    }
+
+    nav.desktop-menu ul {
+        display: none;
+        /* Hide the desktop menu */
+    }
+
+    main {
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 12px;
+        width: 100%;
+        height: 40px;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+}
+
+hr {
+    width: 100%; /* Make the line extend the full width of the screen */
+    height: 1px; /* Set the height of the line */
+    background-color: #333; /* Set the color of the line */
+    border: none; /* Remove the default border */
+    margin: 20px 0; /* Add margin for spacing, adjust as needed */
+}

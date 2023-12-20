@@ -1,0 +1,223 @@
+/* Stiluri comune */
+header {
+    background-color: #EBE3D5;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.hamburger-menu {
+    display: none;
+    /* Inițial ascuns pe ecrane mari */
+}
+
+.mobile-menu {
+    display: none;
+    /* Inițial ascuns */
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.imgSTEAG {
+    vertical-align: middle;
+    margin-left: 124px;
+}
+
+nav {
+    margin-left: auto;
+    /* muta meniul in partea dreapta */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 124px;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(21, 21, 21);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffdfc;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    margin-left: 124px;
+    margin-right: 124px;
+    flex: 1;
+    font-size: 16px;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li {
+
+    text-align: center;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    padding: 22px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #EBE3D5;
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 1350px) {
+    .imgSTEAG {
+        margin-left: 5%;
+    }
+
+    .desktop-menu {
+        margin-right: 20px;
+        margin-left: auto;
+    }
+
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden;
+
+    }
+
+    /* Add tablet-specific styles here if needed */
+}
+
+/* Media query for phones */
+@media screen and (max-width: 480px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+        /* Mobile menu initially hidden */
+    }
+
+    .hamburger-menu {
+        display: block;
+        /* Show the hamburger menu */
+        cursor: pointer;
+    }
+
+    .line {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px 0;
+    }
+
+    /* Add phone-specific styles here if needed */
+}
+
+/* Styles for the hamburger menu */
+
+/* Styles for displaying the menu on smaller screens */
+@media screen and (max-width: 480px) {
+
+
+    .hamburger-menu {
+        display: block;
+        /* Show the hamburger menu */
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: 25px;
+    }
+
+    .line {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px 0;
+    }
+
+    .imgSTEAG {
+        margin-left: 10px;
+        width: 35px;
+        height: 25px;
+    }
+
+    nav {
+        display: none;
+        /* Hide the desktop menu */
+    }
+
+    main {
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 12px;
+        width: 100%;
+
+    }
+
+    /* Style the navigation menu */
+    .desktop-menu {
+        display: none;
+    }
+
+}
