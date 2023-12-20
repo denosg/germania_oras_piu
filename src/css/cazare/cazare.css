@@ -1,0 +1,299 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffdfc;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #EBE3D5;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.imgSTEAG {
+    vertical-align: middle;
+    margin-left: 124px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 124px;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(21, 21, 21);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+main {
+    margin-left: 124px;
+    margin-right: 124px;
+    flex: 1;
+    font-size: 16px;
+    text-align: justify;
+}
+
+footer {
+    margin-top: auto;
+    padding: 22px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.image-row figure {
+    width: 25%;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.image-row img {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+.formular {
+    display: flex;
+    flex-direction: column;
+}
+
+.formular label {
+    width: 50%;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+.formular input[type="text"],
+.formular input[type="email"],
+.formular input[type="tel"],
+.formular input[type="number"],
+.formular input[type="date"],
+.formular input[type="checkbox"] {
+    width: 50%;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.formular input[type="submit"] {
+    width: 50%;
+    padding: 8px 15px;
+    margin-top: 10px;
+    background-color: #EBE3D5;
+    color: rgb(21, 21, 21);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    display: none;
+    /* Inițial ascuns pe ecrane mari */
+}
+
+.mobile-menu {
+    display: none;
+    /* Inițial ascuns */
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width:1201px) {
+    .p1 {
+        width: 30%;
+
+    }
+
+    .p2 {
+        width: 30%;
+
+
+    }
+
+    .gallery {
+        width: 68%;
+        float: right;
+        margin-top: -290px
+    }
+}
+
+@media screen and (max-width:1200px) {
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .imgSTEAG {
+        vertical-align: middle;
+        margin-left: 5%;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin-right: 5%;
+        display: flex;
+    }
+
+    .image-row img {
+        width: 100%;
+        height: 120px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .gallery {
+        width: 48%;
+        float: right;
+        margin-top: -1%;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    h1 {
+        text-align: center;
+    }
+
+    .hamburger-menu {
+        margin-right: 10px;
+        margin-left: auto;
+        display: block;
+        /* Show the hamburger menu */
+        cursor: pointer;
+    }
+
+    .line {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px 0;
+
+    }
+
+    .imgSTEAG {
+        margin-left: 10px;
+        width: 35px;
+        height: 20px;
+    }
+
+    nav.desktop-menu ul {
+        display: none;
+        /* Hide the desktop menu */
+    }
+
+    main {
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    footer {
+        margin-top: auto;
+        padding: 10px;
+        font-size: 12px;
+        width: 100%;
+        height: 40px;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    header {
+        min-width: 100%;
+    }
+
+    .formular label {
+        width: 100%;
+        padding-right: 10px;
+        text-align: justify;
+    }
+
+    .formular input[type="text"],
+    .formular input[type="email"],
+    .formular input[type="tel"],
+    .formular input[type="number"],
+    .formular input[type="date"],
+    .formular input[type="checkbox"] {
+        width: 50%;
+        height: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 5px;
+
+    }
+
+    .formular input[type="submit"] {
+        width: 50%;
+        padding: 8px 15px;
+        margin-top: 10px;
+        background-color: #EBE3D5;
+        color: rgb(21, 21, 21);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .image-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 1%;
+    }
+
+    .image-row figure {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .image-row img {
+        width: 100%;
+        height: 200px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+}

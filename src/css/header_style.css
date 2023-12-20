@@ -18,3 +18,10 @@ nav.desktop-menu {
     font-size: 22px;
     font-weight: bold;
 }
+
+header {
+    background-color: grey;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
