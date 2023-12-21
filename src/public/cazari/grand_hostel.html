@@ -7,6 +7,7 @@
     <title>Grand Hostel</title>
     <link rel="stylesheet" href="../../css/cazare/cazare.css">
     <link rel="stylesheet" href="../../css/header_style.css">
+    <link rel="stylesheet" href="../../css/side-nav.css">
 </head>
 
 <body>
@@ -22,20 +23,19 @@
             </ul>
         </nav>
 
-        <div class="hamburger-menu">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+        <span class="open-btn" onclick="openNav()">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </span>
 
-        <!-- Mobile menu -->
-        <div class="mobile-menu">
-            <a href="../../index.html">Acasă</a>
-            <a href="../../public/obiective.html">Obiective</a>
-            <a href="../../public/cazare.html">Cazare</a>
-            <a href="../../public/evenimente.html">Evenimente</a>
-            <a href="../../public/contact.html">Contact</a>
-            <!-- Adaugă alte elemente de meniu aici -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../../index.html">Acasa</a>
+            <a href="../obiective.html">Obiective</a>
+            <a href="../cazare.html">Cazare</a>
+            <a href="../evenimente.html">Evenimente</a>
+            <a href="../contact.html">Contact</a>
         </div>
     </header>
 
@@ -92,7 +92,7 @@
         <p> Costelas Denis &copy;Copyrights</p>
     </footer>
 
-    <script src="../../js/load_hamburger.js"></script>
+    <script src="../../js/side-nav.js"></script>
     <script src="../jquery-3.6.0.min.js"></script>
 </body>
 

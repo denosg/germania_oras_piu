@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../css/evenimente.css">
   <link rel="stylesheet" href="../css/header_style.css">
   <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/side-nav.css">
 </head>
 
 <body>
@@ -22,64 +23,52 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <div class="hamburger-menu">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
 
-    <!-- Mobile menu -->
-    <div class="mobile-menu">
-      <a href="../index.html">Acasă</a>
+    <span class="open-btn" onclick="openNav()">
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+    </span>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../index.html">Acasa</a>
       <a href="obiective.html">Obiective</a>
       <a href="cazare.html">Cazare</a>
       <a href="evenimente.html">Evenimente</a>
       <a href="contact.html">Contact</a>
-      <!-- Adaugă alte elemente de meniu aici -->
     </div>
   </header>
   <main>
     <h1>Evenimente</h1>
-    <p>Va voi prezenta mai jos câteva evenimente care vor avea loc în următoarea perioadă în Germania:</p>
-    <h3>Festival: Films from the South</h3>
+    <p>Hai sus Germania:</p>
+    <h3>Festivalul Artelor Urbane "BerlUrban":</h3>
     <p>
-      Cel mai mare festival de film din Germania prezintă cele mai bune filme din Asia, Africa și America Latină.
-      Prin experiențe de vizionare a filmelor de calitate, seminarii, invitați internaționali și evenimente
-      pe tot parcursul anului, Filmele din Sud sunt o arenă importantă pentru schimbul cultural și o parte
-      esențială a vieții culturale din Germania și a industriei cinematografice norvegiene.
-    </p>
-
-    <p>
-      Festivalul va avea loc între 11-19 Noiembrie 2023 în Germania.
+      Descriere: Un festival urban dedicat artelor stradale, graffiti-ului, dansului urban și muzicii de stradă.
+      Locație: Diverse locuri în Berlin.
+      Data: 15-17 iulie 2023.
     </p>
     <br>
 
-    <h3>Comedy show (No.): Julelatter 2023</h3>
-    <p>Spectacolul va avea loc pe data de 15 respectiv 16 Noiembrie.</p>
+    <h3>Concert în Parcul Tiergarten:</h3>
+    <p> Descriere: Un concert în aer liber în frumosul Parc Tiergarten, cu artiști locali și internaționali.
+      Locație: Tiergarten, Berlin.
+      Data: 5 august 2023.</p>
     <br>
 
-    <h3>Wallmans Germania Dinner Show</h3>
-    </li>
+    <h3>Curs de Artă Grafică și Ilustrație:</h3>
     <p>
-      În spectacolul de cină Wallmans, artiștii vă oferă o seară fascinantă cu muzică live, acrobații și
-      delicii culinare. Experimentați o atmosferă captivantă și bucurați-vă de un meniu rafinat în patru
-      feluri, servit de personal talentat. Ușile se deschid la 18:00 pentru o experiență care se întinde
-      până în jurul orei 23:00, cu un spectacol plin de viață și o petrecere care continuă după încheierea
-      cestuia. Prețul include totul, de la intrare și spectacol până la o cină excelentă, băuturile fiind
-      singurele în plus.
-    </p>
-
-    <p>
-      Spectacolul va avea loc intre 14 - 18 Noiembrie respectiv 21 - 25 Noiembrie între orele mai sus
-      precizate.
+      Descriere: Un curs interactiv în care participanții învață tehnici de artă grafică și ilustrație, susținut de artiști locali.
+      Locație: Galeria de Artă "CreativityHub", Berlin.
+      Data: Serii de cursuri în fiecare sâmbătă în luna septembrie 2023.
     </p>
   </main>
   <footer>
     <hr>
     <p> Costelas Denis &copy;Copyrights</p>
   </footer>
-  <script src="../js/load_hamburger.js"></script>
   <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/side-nav.js"></script>
 </body>
 
 </html>

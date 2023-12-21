@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/header_style.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/side-nav.css">
 </head>
 
 <body>
@@ -24,20 +25,23 @@
                 <li><a href="./public/contact.html"> Contact</a></li>
             </ul>
         </nav>
-        <div class="hamburger-menu">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
 
-        <div class="mobile-menu">
-            <a href="index.html">Acasă</a>
+        <span class="open-btn" onclick="openNav()">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </span>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Acasa</a>
             <a href="./public/obiective.html">Obiective</a>
             <a href="./public/cazare.html">Cazare</a>
             <a href="./public/evenimente.html">Evenimente</a>
             <a href="./public/contact.html">Contact</a>
         </div>
     </header>
+
     <main>
         <div class="slideshow-container">
 
@@ -70,6 +74,20 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
+        <h1>Bine ati venit in Germania</h1>
+        <h3>Puteti gasi:</h3>
+        <p>
+            Descriere: Un festival urban dedicat artelor stradale, graffiti-ului, dansului urban și muzicii de stradă.
+            Locație: Diverse locuri în Berlin.
+            Data: 15-17 iulie 2023.
+        </p>
+        <br>
+
+        <h3>Concert în Parcul Tiergarten:</h3>
+        <p> Descriere: Un concert în aer liber în frumosul Parc Tiergarten, cu artiști locali și internaționali.
+            Locație: Tiergarten, Berlin.
+            Data: 5 august 2023.</p>
+        <br>
     </main>
     <footer>
         <hr>
@@ -78,6 +96,7 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/index/index.js"></script>
     <script src="./js/load_hamburger.js"></script>
+    <script src="./js/side-nav.js"></script>
 </body>
 
 </html>
